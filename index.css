@@ -1,0 +1,68 @@
+/* Working with FLEXBOX */
+body, main, header, article, section, form, #container, #link, h1, h2, h3, h4{
+  display: flex;
+}
+
+body { 
+  font-family: sans-serif;
+}
+
+* {
+  color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  justify-content:center;
+}
+
+ main {
+  width: 100%;
+  margin: 2% 2%;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
+ form {
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40vh;
+ }
+
+ #name {
+   
+ }
+
+ #points {
+   
+}
+
+#course {
+   
+}
+
+#session {
+   
+}
+
+section {
+  flex-direction: row;
+}
+
+article {
+  flex-direction: column;
+  height: 7vh;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+}
