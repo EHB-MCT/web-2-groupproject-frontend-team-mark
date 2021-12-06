@@ -22,6 +22,11 @@ h2 {
   justify-content:center;
 }
 
+h2 i { 
+  margin-right: 5px;
+  color: #A6ED2D;
+}
+
 
 header {
   height: 10vh;
@@ -90,6 +95,12 @@ button {
   text-decoration: none;
   cursor: pointer; 
   border-radius: 20px;
+}
+
+/* icon Hover */
+i { 
+  margin-left: 5px;
+  color: #A6ED2D;
 }
 
 /* Hover */

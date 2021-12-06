@@ -3,8 +3,9 @@
 
 <head>
   <title>Gochallenge</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script type="module" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <script type="module" src="./js/index.js"></script>
 </head>
 
 <body>
@@ -13,8 +14,8 @@
         <h1>Go-challenge</h1>
     </header>
     <!-- /////////////////// Insert/Edit block /////////////////// -->
-    <form>
-        <h2>Add new challenge</h2>
+    <form action="" method="post">
+        <h2><i class="fas fa-1x fa-plus"></i>Add new challenge</h2>
         <!-- 1) Name -->
         <input id="name" type="text" name="name" placeholder=" Challenge name" />
         <!-- 2) Points -->
@@ -30,17 +31,17 @@
     </form>
     <!-- /////////////////// List block /////////////////// -->
     <div id="list_container">
-        <!-- 
+        
         <section>
             <article>
                 <h3>[Challenge Name - Testing]</h3>
                 <section>
-                    <button id=btn>[Delete]</button>
-                    <button id=btn>[Edit]</button>
+                    <button id=btn>[Delete]<i class="fas fa-1x fa-trash"></i></button>
+                    <button id=btn>[Edit]<i class="fas fa-1x fa-pencil-alt"></i></button>
                 </section>
             </article>
         </section>
-        -->
+        
     </div>
   </main>
 </body>
