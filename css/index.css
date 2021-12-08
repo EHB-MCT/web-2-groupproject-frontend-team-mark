@@ -1,5 +1,5 @@
 /* Working with FLEXBOX */
-body, main, header, article, section, form, section, #list_container, #link, h1, h2, h3, h4{
+body, main, header, article, section, form, section, #container, h1, h2, h3, h4{
   display: flex;
 }
 
@@ -49,7 +49,15 @@ header {
   margin-bottom: 3%;
  }
 
- input#name,input#points,input#course,select#sessions {
+ form > button {
+  width: 100%;
+  color: white;
+  background-color: #2c51d3;
+  border: 2px solid#2c51d3;
+}
+
+
+ input#name,input#points,input#course,#sessions {
   height: 4vh;
   text-align: center;
   color: black;
@@ -57,15 +65,13 @@ header {
   border-radius: 20px;
 }
 
-option {color: black}
-
-#list_container {
+#container {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-#list_container > section {
+#container > section {
   width: 500px;
   margin-bottom: 3%;
 }
@@ -78,16 +84,27 @@ article {
   align-items: center;
 }
 
-#list_container article section {
+article > article {
+  width: 85%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#container article article > article {
+  font-size: 0.8em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#container article section {
   width: 100%;
   justify-content: space-evenly;
 }
 
 button {
   width: 33%;
-  height: 4vh;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  height: 3vh;
   font-weight: 600;
   color: black; 
   background-color: white; 
@@ -96,6 +113,16 @@ button {
   cursor: pointer; 
   border-radius: 20px;
 }
+
+.submit {
+  background-color: #2c51d3;
+  border: 3px solid #2c51d3;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 7px 18px;
+}
+
 
 /* icon Hover */
 i { 

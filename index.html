@@ -14,24 +14,22 @@
         <h1>Gamification</h1>
     </header>
     <!-- /////////////////// Insert/Edit block /////////////////// -->
-    <form action="" method="post">
+    <form id="from" action="" method="post">
         <h2><i class="fas fa-1x fa-plus"></i>Add new challenge</h2>
         <!-- 1) Name -->
         <input id="name" type="text" name="name" placeholder=" Challenge name" />
         <!-- 2) Points -->
-        <input id="points" type="number" name="course" placeholder="Points" />
+        <input id="points" type="number" name="points" placeholder="Points" />
         <!-- 3) Course -->
         <input id="course" type="text" name="course" placeholder=" Course name" />
         <!-- 4) Session -->
-        <select id="sessions" name="session">
-            <option value="" disabled selected hidden>Which session?</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-        </select>
+        <input id="sessions" type="number" name="sessions" placeholder="sessions" />
+        <!-- Submit -->
+        <button type="submit">Add challenge</button>
     </form>
     <!-- /////////////////// List block /////////////////// -->
-    <div id="list_container">
-        
+    <div id="container">
+        <!--
         <section>
             <article>
                 <h3>[Challenge Name - Testing]</h3>
@@ -41,7 +39,7 @@
                 </section>
             </article>
         </section>
-        
+        -->
     </div>
   </main>
 </body>
